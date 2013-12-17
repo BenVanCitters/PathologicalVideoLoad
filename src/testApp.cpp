@@ -149,14 +149,17 @@ void testApp::mouseReleased(int x, int y, int button){
     //673[242.441],858[319.017],235[93.1933],940[261.76],2355[870.25],1132[387.621],1346[482.081]
     
     //qtmoviekit dealloc/close - myNewPlayer+ (ofRandom(1.f) < .02)
-    //710[238.63],157[28.257],779[610.05],55[56.3435]
+    //710[238.63],157[28.257],779[610.05],55[56.3435],618[107.814]
+    
+    //qtmoviekit dealloc/close - myNewPlayer+ if(ofRandom(1.f) < .005)
+    //95[365.099],284[794.998],
 }
 
 
 //--------------------------------------------------------------
 void testApp::update(){
     fingerMovie.update();
-    if(ofRandom(1.f) < .02)
+    if(ofRandom(1.f) < .005)
     {
         mouseReleased(0,0,0);
     }
